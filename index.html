@@ -167,43 +167,7 @@
             <p>你可以通过 <a href="mailto:1872974@gmail.com">发送电子邮件发送到我的邮箱</a> 联系我。</p>
        
             
-            <form class="contact-form" action="submit_form.php" method="post">
-                <input type="text" name="name" placeholder="姓名" required>
-                <input type="email" name="email" placeholder="电子邮件" required>
-                <textarea name="message" placeholder="您的留言" rows="5" required></textarea>
-                <button type="submit">提交</button>
-            </form>
-        </section> </section>
-    </main>
-    <footer>
-        &copy; 2024 国际基督徒交流群. 版权所有.
-    </footer>
-
-说明
-表单提交：使用 <form> 标签的 action 属性指向 submit_form.php，并设置 method 为 post，确保表单数据以POST方式发送到服务器处理脚本。
-表单字段：
-姓名：使用 name="name" 的文本输入框，标记为必填。
-电子邮件：使用 name="email" 的电子邮件输入框，标记为必填。
-留言：使用 name="message" 的多行文本框，标记为必填。
-提交按钮：使用 <button> 标签，并确保它提交表单数据。
-服务器端的 submit_form.php 脚本将处理表单数据，保存或发送电子邮件。以下是一个简单的PHP示例脚本：
-
-php
-Copy code
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-
-    // 处理表单数据，比如保存到数据库或发送电子邮件
-    // 这里我们仅简单地返回一个确认信息
-
-    echo "感谢您的留言，$name！我们会尽快与您联系。";
-} else {
-    echo "表单提交无效。";
-}
-?>
+          
     
 </body>
 </html>
