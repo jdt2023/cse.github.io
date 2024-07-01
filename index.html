@@ -1,0 +1,208 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国际基督徒交流群</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #287c0e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .section-title {
+            margin-top: 0;
+        }
+        .community-item, .testimony-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .community-item img, .testimony-item img {
+            border-radius: 50%;
+            margin-right: 15px;
+            width: 50px;
+            height: 50px;
+        }
+        .community-item div, .testimony-item div {
+            flex: 1;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>国际基督徒交流群</h1>
+        <p>连接世界各地的基督徒，共享信仰，共同成长</p>
+    </header>
+    <nav>
+        <a href="#about">关于我们</a>
+        <a href="#community">社区活动</a>
+        <a href="#testimonies">信仰见证</a>
+        <a href="#contact">联系我们</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2 class="section-title">关于我们</h2>
+            <p>国际基督徒交流群是一个汇集了来自世界各地的基督徒的网络社群。在这里，我们分享信仰经历、教义理解和生活见闻，互相鼓励和支持，共同在主里成长。</p>
+            <img src="about-us.jpg" alt="关于我们" style="width:100%; height:auto; margin-top:20px;">
+        </section>
+        <section id="community">
+            <h2 class="section-title">社区活动</h2>
+            <div class="community-item">
+                <img src="prayer.jpg" alt="祷告会">
+                <div>
+                    <h3>在线祷告会</h3>
+                    <p>每周五晚上8点，我们都会举办在线祷告会，欢迎大家加入，一起在主里祷告和分享。</p>
+                </div>
+            </div>
+            <div class="community-item">
+                <img src="bible-study.jpg" alt="圣经学习">
+                <div>
+                    <h3>圣经学习小组</h3>
+                    <p>每周三晚上7点，我们有圣经学习小组，深入探讨圣经教义和生活应用。</p>
+                </div>
+            </div>
+            <div class="community-item">
+                <img src="fellowship.jpg" alt="团契活动">
+                <div>
+                    <h3>团契活动</h3>
+                    <p>每月一次的线下团契活动，增进彼此的了解和友谊，共同在主里成长。</p>
+                </div>
+            </div>
+        </section>
+        <section id="testimonies">
+            <h2 class="section-title">信仰见证</h2>
+            <div class="testimony-item">
+                <img src="testimony1.jpg" alt="见证1">
+                <div>
+                    <h3>李先生的见证</h3>
+                    <p>来自中国的李先生分享了他在事业低谷时，如何通过信仰找到新的希望和力量的经历。</p>
+                </div>
+            </div>
+            <div class="testimony-item">
+                <img src="testimony2.jpg" alt="见证2">
+                <div>
+                    <h3>王小姐的见证</h3>
+                    <p>来自越南的王小姐讲述了她在家庭和信仰之间找到平衡，并带领家人一起信主的故事。</p>
+                </div>
+            </div>
+            <div class="testimony-item">
+                <img src="testimony3.jpg" alt="见证3">
+                <div>
+                    <h3>陈牧师的见证</h3>
+                    <p>陈牧师分享了他如何从一个普通的信徒成长为一名牧师，并在不同国家传福音的经历。</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="section-title">联系我们</h2>
+            <p>如果您有任何问题或建议，请通过下面的表单联系我们：</p>
+            <form class="contact-form" action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="姓名" required>
+                <input type="email" name="email" placeholder="电子邮件" required>
+                <textarea name="message" placeholder="您的留言" rows="5" required></textarea>
+                <button type="submit">提交</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 国际基督徒交流群. 版权所有.
+    </footer>
+
+说明
+表单提交：使用 <form> 标签的 action 属性指向 submit_form.php，并设置 method 为 post，确保表单数据以POST方式发送到服务器处理脚本。
+表单字段：
+姓名：使用 name="name" 的文本输入框，标记为必填。
+电子邮件：使用 name="email" 的电子邮件输入框，标记为必填。
+留言：使用 name="message" 的多行文本框，标记为必填。
+提交按钮：使用 <button> 标签，并确保它提交表单数据。
+服务器端的 submit_form.php 脚本将处理表单数据，保存或发送电子邮件。以下是一个简单的PHP示例脚本：
+
+php
+Copy code
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // 处理表单数据，比如保存到数据库或发送电子邮件
+    // 这里我们仅简单地返回一个确认信息
+
+    echo "感谢您的留言，$name！我们会尽快与您联系。";
+} else {
+    echo "表单提交无效。";
+}
+?>
+    
+</body>
+</html>
+
+
+
+
+          
